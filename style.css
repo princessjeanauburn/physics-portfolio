@@ -98,7 +98,27 @@ header p{
 }
 
 /* ---------- CARDS ---------- */
+.about{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
 
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.tags span{
+    background:#ffe6f1;
+    color:#c63d79;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:.9rem;
+    font-weight:600;
+}
 .card{
     width:min(900px,90%);
     margin:60px auto;
