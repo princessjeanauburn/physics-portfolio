@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -5,57 +9,120 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f4ff;
-    color:#333;
-    line-height:1.6;
+    font-family: "Segoe UI", sans-serif;
+    background:#fff8fc;
+    color:#4b4453;
 }
 
+/* ---------- NAVIGATION ---------- */
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(12px);
+    z-index:100;
+}
+
+.logo{
+    color:#d65a8f;
+}
+
+.links a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#7d6171;
+    font-weight:600;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:#e05c96;
+}
+
+/* ---------- HERO ---------- */
+
 header{
-    background:linear-gradient(135deg,#d9c2ff,#ffc8e8);
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:70px 20px;
+    padding:20px;
+    background:
+      linear-gradient(rgba(255,240,247,.75),
+      rgba(255,248,252,.95)),
+      url("https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
 }
 
 header h1{
-    font-size:3rem;
+    font-size:4rem;
+    color:#c63d79;
 }
 
-nav{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    background:white;
-    padding:15px;
-    position:sticky;
-    top:0;
+header p{
+    margin:20px 0;
+    font-size:1.2rem;
 }
 
-nav a{
+.button{
     text-decoration:none;
-    color:#6b4fb3;
-    font-weight:bold;
+    background:#ea7cab;
+    color:white;
+    padding:14px 28px;
+    border-radius:999px;
+    transition:.3s;
 }
+
+.button:hover{
+    background:#d96095;
+}
+
+.petals{
+    margin-top:50px;
+    font-size:2rem;
+    animation:float 5s infinite ease-in-out;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+/* ---------- CARDS ---------- */
 
 .card{
-    background:white;
     width:min(900px,90%);
-    margin:35px auto;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    margin:60px auto;
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(233,120,171,.15);
+}
+
+.card h2{
+    color:#d4558c;
+    margin-bottom:20px;
 }
 
 .project{
+    margin-top:18px;
     padding:18px;
-    margin-top:15px;
-    border-left:5px solid #d39af5;
-    background:#faf7ff;
-    border-radius:10px;
+    border-left:5px solid #f2a8c6;
+    background:#fff4f8;
+    border-radius:12px;
 }
 
 footer{
     text-align:center;
     padding:35px;
-    color:#777;
+    color:#a48b99;
 }
