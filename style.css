@@ -203,7 +203,24 @@ header p{
     color:#d4558c;
     margin-bottom:20px;
 }
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
 
+.project a{
+    display:inline-block;
+    margin-top:15px;
+    color:#d4558c;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.project:hover{
+    transform:translateY(-6px);
+    transition:.3s;
+}
 .project{
     margin-top:18px;
     padding:18px;
