@@ -120,7 +120,7 @@ header p{
     font-weight:600;
 }
 .card{
-    width:min(1440px,95%);
+    width:min(1440px,90%);
     margin:60px auto;
     background:white;
     padding:35px;
