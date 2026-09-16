@@ -9,9 +9,11 @@ html{
 }
 
 body{
-    font-family: "Segoe UI", sans-serif;
+    font-family:"Segoe UI", sans-serif;
     background:#fff8fc;
     color:#4b4453;
+    margin:0;
+    width:100%;
 }
 
 /* ---------- NAVIGATION ---------- */
@@ -225,8 +227,9 @@ header p{
 }
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(3, minmax(280px, 1fr));
+    gap:24px;
+    width:100%;
 }
 
 .project a{
