@@ -264,3 +264,32 @@ footer a{
 footer a:hover{
     text-decoration:underline;
 }
+.hover-card{
+    overflow:hidden;
+    transition:0.35s ease;
+}
+
+.preview{
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:0.45s ease;
+    margin:0;
+}
+
+.preview img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+.hover-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 16px 32px rgba(236,72,153,.18);
+}
+
+.hover-card:hover .preview{
+    max-height:220px;
+    opacity:1;
+    margin:15px 0;
+}
