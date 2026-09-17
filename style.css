@@ -368,3 +368,43 @@ footer a:hover{
     margin-top: 0.75rem;
     font-style: italic;
 }
+.content-card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.content-card h2{
+    margin-bottom: 1rem;
+}
+
+.content-card p{
+    line-height: 1.7;
+    color: #ddd;
+}
+
+.content-card ul{
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+.figure{
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+.figure img{
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+}
+
+.caption{
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    font-style: italic;
+}
