@@ -52,135 +52,96 @@
 
   </div>
 
-</section>
-  <section class="content-card" id="chaos">
-    <h2>chaos Theory</h2>
-
-    <p>
-        Chaos theory studies deterministic systems whose long-term behaviour
-        appears unpredictable. Although the governing equations are completely
-        known, tiny differences in the initial conditions grow rapidly over time,
-        producing dramatically different trajectories. This phenomenon is known
-        as <strong>sensitivity to initial conditions</strong>, or the
-        <em>Butterfly Effect</em>.
-    </p>
-
-    <p>
-        The Lorenz and Rössler attractors are classic examples of chaotic
-        systems and demonstrate how simple nonlinear equations can generate
-        complex, seemingly random behaviour.
-    </p>
-</section>
-  <section class="content-card" id="complex-system">
-    <h2>🌪️ Why is the Lorenz System Complex?</h2>
-
-    <p>
-        The Lorenz system is considered a complex system because it consists of
-        three coupled nonlinear differential equations whose interactions produce
-        emergent behaviour that cannot be understood from any single variable
-        alone.
-    </p>
-
-    <ul>
-        <li><strong>Nonlinearity:</strong> Variables continuously influence one another.</li>
-        <li><strong>Sensitive dependence:</strong> Tiny changes in the initial state produce completely different trajectories.</li>
-        <li><strong>Deterministic chaos:</strong> The equations are deterministic, yet long-term prediction becomes practically impossible.</li>
-    </ul>
-
-    <p>
-        Rather than repeating periodically, the trajectory evolves within the
-        butterfly-shaped strange attractor, illustrating ordered chaos.
-    </p>
-</section>
-
 <section id="projects" class="card">
-  <h2>Projects</h2>
+  <h2>Complex Systems</h2>
 
   <div class="project-grid">
 
+    <!-- Chaos Theory -->
+    <div class="project hover-card">
+      <div class="project-content">
+        <h3>🦋 Chaos Theory</h3>
+        <p>Deterministic systems, butterfly effect and sensitivity to initial conditions.</p>
+
+        <div class="preview">
+          <img src="images/lorenz.gif" alt="Chaos Theory">
+        </div>
+
+        <a href="Chaos.html">Open ↗</a>
+      </div>
+    </div>
+
+    <!-- Lorenz -->
     <div class="project hover-card">
       <div class="project-content">
         <h3>🌀 Lorenz Attractor</h3>
         <p>Interactive chaotic system simulation using Python and numerical methods.</p>
 
         <div class="preview">
-          <img src="images/lorenz.gif" alt="Lorenz Attractor">
+          <img src="images/lorenz.gif" alt="Lorenz">
         </div>
 
-        <a href="lorenz.html">Open →</a>
+        <a href="Lorenz.html">Open ↗</a>
       </div>
     </div>
 
+    <!-- Rossler -->
     <div class="project hover-card">
-  <div class="project-content">
-    <h3>🌀 Rössler Attractor</h3>
-    <p>Visualization of nonlinear dynamics and phase-space trajectories.</p>
+      <div class="project-content">
+        <h3>🌀 Rössler Attractor</h3>
+        <p>Visualization of nonlinear dynamics and phase-space trajectories.</p>
 
-    <div class="preview">
-      <img src="images/rossler_rotating.gif" alt="Rössler Attractor">
+        <div class="preview">
+          <img src="images/rossler_rotating.gif" alt="Rossler">
+        </div>
+
+        <a href="Rossler.html">Open ↗</a>
+      </div>
     </div>
 
-    <a href="Rossler.html">Open ↗</a>
+    <!-- Return Map -->
+    <div class="project hover-card">
+      <div class="project-content">
+        <h3>📈 Lorenz Return Map</h3>
+        <p>Successive maxima plotted against the next maximum with the diagonal reference line.</p>
+
+        <div class="preview">
+          <img src="images/lorenz_return_map.png" alt="Return Map">
+        </div>
+
+        <a href="ReturnMap.html">Open ↗</a>
+      </div>
+    </div>
+
+    <!-- Cobweb -->
+    <div class="project hover-card">
+      <div class="project-content">
+        <h3>🕸️ Cobweb Diagram</h3>
+        <p>Animated logistic map illustrating deterministic chaos through iterations.</p>
+
+        <div class="preview">
+          <img src="images/cobweb_logistic.gif" alt="Cobweb">
+        </div>
+
+        <a href="Cobweb.html">Open ↗</a>
+      </div>
+    </div>
+
+    <!-- Materials -->
+    <div class="project hover-card">
+      <div class="project-content">
+        <h3>🧪 ZnFe₂O₄ Research</h3>
+        <p>Synthesis, XRD characterization and materials science project.</p>
+
+        <div class="preview">
+          <img src="images/xrd.png" alt="Research">
+        </div>
+
+        <a href="#">Coming Soon</a>
+      </div>
+    </div>
+
   </div>
-    </div>
-    
-    <div class="project">
-      <h3>🧪 ZnFe₂O₄ Research</h3>
-      <p>Synthesis, XRD characterization and materials science project.</p>
-      <a href="#">Coming Soon</a>
-    </div>
-
-  </div>
-</section>
-  <section class="card" id="return-map">
-    <h2>📈 Lorenz Return Map</h2>
-
-    <p>
-        A return map is a discrete representation of a continuous chaotic system.
-        Here, each local maximum of the Lorenz z-variable is plotted against the
-        following maximum (Zn versus Zn+1).
-    </p>
-
-    <div class="figure">
-        <img src="images/lorenz_return_map.png"
-             alt="Lorenz Return Map">
-    </div>
-
-    <p class="caption">
-        Scatter plot of successive maxima with the diagonal reference line y = x.
-    </p>
-
-    <p>
-        Instead of collapsing onto a single point, the maxima form a nonlinear
-        curve, demonstrating deterministic chaos and the absence of simple
-        periodic behavior.
-    </p>
-</section>
-  <section class="content-card" id="cobweb">
-    <h2>🕸️ Logistic Map & Cobweb Diagram</h2>
-
-    <p>
-        The logistic map is one of the simplest mathematical models capable of
-        producing chaotic behaviour. The cobweb diagram visualizes repeated
-        iterations of the nonlinear equation
-        xₙ₊₁ = rxₙ(1 − xₙ), allowing the evolution of the system to be followed
-        step by step.
-    </p>
-
-    <div class="figure">
-        <img src="images/cobweb_logistic.gif"
-             alt="Animated Cobweb Diagram">
-    </div>
-
-    <p class="caption">
-        Animated cobweb diagram showing successive iterations between the
-        logistic curve and the diagonal line y = x.
-    </p>
-
-    <p>
-        For r = 3.8, the iterations do not converge to a fixed point, revealing
-        deterministic chaos and strong sensitivity to initial conditions.
-    </p>
 </section>
 
 <section id="contact" class="card">
