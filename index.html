@@ -53,6 +53,45 @@
   </div>
 
 </section>
+  <section class="content-card" id="chaos">
+    <h2>🦋 Chaos Theory</h2>
+
+    <p>
+        Chaos theory studies deterministic systems whose long-term behaviour
+        appears unpredictable. Although the governing equations are completely
+        known, tiny differences in the initial conditions grow rapidly over time,
+        producing dramatically different trajectories. This phenomenon is known
+        as <strong>sensitivity to initial conditions</strong>, or the
+        <em>Butterfly Effect</em>.
+    </p>
+
+    <p>
+        The Lorenz and Rössler attractors are classic examples of chaotic
+        systems and demonstrate how simple nonlinear equations can generate
+        complex, seemingly random behaviour.
+    </p>
+</section>
+  <section class="content-card" id="complex-system">
+    <h2>🌪️ Why is the Lorenz System Complex?</h2>
+
+    <p>
+        The Lorenz system is considered a complex system because it consists of
+        three coupled nonlinear differential equations whose interactions produce
+        emergent behaviour that cannot be understood from any single variable
+        alone.
+    </p>
+
+    <ul>
+        <li><strong>Nonlinearity:</strong> Variables continuously influence one another.</li>
+        <li><strong>Sensitive dependence:</strong> Tiny changes in the initial state produce completely different trajectories.</li>
+        <li><strong>Deterministic chaos:</strong> The equations are deterministic, yet long-term prediction becomes practically impossible.</li>
+    </ul>
+
+    <p>
+        Rather than repeating periodically, the trajectory evolves within the
+        butterfly-shaped strange attractor, illustrating ordered chaos.
+    </p>
+</section>
 
 <section id="projects" class="card">
   <h2>Projects</h2>
@@ -115,6 +154,32 @@
         Instead of collapsing onto a single point, the maxima form a nonlinear
         curve, demonstrating deterministic chaos and the absence of simple
         periodic behavior.
+    </p>
+</section>
+  <section class="content-card" id="cobweb">
+    <h2>🕸️ Logistic Map & Cobweb Diagram</h2>
+
+    <p>
+        The logistic map is one of the simplest mathematical models capable of
+        producing chaotic behaviour. The cobweb diagram visualizes repeated
+        iterations of the nonlinear equation
+        xₙ₊₁ = rxₙ(1 − xₙ), allowing the evolution of the system to be followed
+        step by step.
+    </p>
+
+    <div class="figure">
+        <img src="images/cobweb_logistic.gif"
+             alt="Animated Cobweb Diagram">
+    </div>
+
+    <p class="caption">
+        Animated cobweb diagram showing successive iterations between the
+        logistic curve and the diagonal line y = x.
+    </p>
+
+    <p>
+        For r = 3.8, the iterations do not converge to a fixed point, revealing
+        deterministic chaos and strong sensitivity to initial conditions.
     </p>
 </section>
 
